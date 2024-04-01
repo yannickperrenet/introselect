@@ -13,11 +13,11 @@ The reason Python never opted to implement any `nth_element` function based on a
 selection algorithm, is clearly explained by Raymond Hettinger
 ([source](https://bugs.python.org/msg309909)):
 
-    While variants of quick-select have a nice O(n) theoretical time, the variability is very-high
-    and has really bad worst cases. The existing sort() is unbelievably fast, has a reasonable worst
-    case, exploits existing order to great advantage, has nice cache performance, and has become
-    faster still with the recently added type-specialized comparisons.  This sets a very high bar
-    for any proposed patches.
+>   While variants of quick-select have a nice O(n) theoretical time, the variability is very-high
+>   and has really bad worst cases. The existing sort() is unbelievably fast, has a reasonable worst
+>   case, exploits existing order to great advantage, has nice cache performance, and has become
+>   faster still with the recently added type-specialized comparisons.  This sets a very high bar
+>   for any proposed patches.
 
 Nevertheless, having an implementation at hand seemed like a good idea to me. Depending on your
 data, using a selection algorithm may very well outperform Python's native `sort()`. Although the
