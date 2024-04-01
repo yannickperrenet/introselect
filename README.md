@@ -86,7 +86,7 @@ assert arr[1] == sorted(arr)[1] == 3
 ## Example timings
 
 As you can see, `sort()` provides the most reliable runtime (in addition to subsequent calls for
-different `n` being $O(1)$). However, in some cases, selection algorithms do run faster.
+different `n` being $O(1)$ ). However, in some cases, selection algorithms do run faster.
 
 ```plain
 N        sort     Lomuto   Intro    Hoare3   Hoare
